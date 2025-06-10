@@ -1,0 +1,31 @@
+{
+  "title": "MRPL Web Scraper with PDF Text Extraction",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "max_pages": {
+      "title": "Maximum pages to scrape",
+      "type": "integer",
+      "description": "Maximum number of pages to scrape from MRPL website (reduced for PDF processing)",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "delay": {
+      "title": "Delay between requests (seconds)",
+      "type": "integer",
+      "description": "Delay between requests in seconds (increased for PDF processing)",
+      "default": 3,
+      "minimum": 2,
+      "maximum": 10
+    },
+    "extract_pdfs": {
+      "title": "Extract text from PDF files",
+      "type": "boolean",
+      "description": "Whether to download and extract text content from PDF files found on pages",
+      "default": true
+    }
+  },
+  "required": []
+}
+

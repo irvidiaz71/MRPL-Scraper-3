@@ -1,0 +1,9 @@
+{
+  "name": "mrpl-web-scraper",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "env": {
+    "APIFY_PYTHON_VERSION": "3.11"
+  }
+}
+
